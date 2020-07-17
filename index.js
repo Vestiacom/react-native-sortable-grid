@@ -44,7 +44,6 @@ class Block extends Component {
 
 class SortableGrid extends Component {
   render = () => {
-    // console.log('h1')
     return (
       <Animated.View
         style={this._getGridStyle()}
@@ -296,7 +295,6 @@ class SortableGrid extends Component {
   };
 
   assessGridSize = ({ nativeEvent }) => {
-    console.log("Calculating grid size");
     if (
       this.props.itemWidth &&
       this.props.itemWidth < nativeEvent.layout.width
