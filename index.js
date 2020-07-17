@@ -460,6 +460,9 @@ class SortableGrid extends Component {
           this.itemOrder,
           item => item.order === order
         );
+        if (blockIndex === -1) {
+          return
+        }
         let x =
           (order * this.state.blockWidth) %
           (this.itemsPerRow * this.state.blockWidth);
